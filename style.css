@@ -1,0 +1,348 @@
+body{
+    background-color: black;
+     padding: 0;
+     margin: 10px;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Quicksand', sans-serif;
+   
+}
+#select{
+  width: 480px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+ #label{
+     background-color: aqua;
+ }
+
+.container{
+    background-color: rgb(241, 237, 232);
+    width: 480px;
+    height: 1000px;
+    margin-left:35%; 
+    
+}
+#profile{
+    display: none;
+}
+
+.profile-card{
+    position: relative;
+    top: 18px; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;  
+}
+ #button{
+     position: absolute;
+     background: none;
+     border: none;
+     width: 25px;
+     font-size: 20pt;
+     position: absolute;
+     top:25px;
+     right:45px;
+     z-index: 1;
+     cursor: pointer;
+     color: antiquewhite;
+     
+}
+.card-header{
+    background-color:rgb(184, 45, 68);
+    width: 90%;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    margin: 1px 18px 0 25px;
+    height:340px; 
+    position: relative;
+   
+}
+
+.card-header img{
+    object-fit: cover;
+    opacity: 0.2;
+    width:100%;
+    height: 100%;
+    border-radius: 27px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.card-header .details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%px;
+    height: 180px;
+    top: 68px; 
+    padding: 10px;
+    margin-left:22%;
+}
+.details #avatar{
+    height: 85px;
+    width: 85px;
+    margin-bottom: 5px;
+    z-index: 3;
+    opacity: 6;
+    border-radius: 15px;
+   
+    
+}
+.name{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 3px;
+    font-weight: 200;
+    
+}
+.title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.person-id{
+ border: 1px solid white;
+ border-radius:20px;
+ width: 100px;
+ height: 25px;
+ font-size: 14px;
+ padding:5px;
+ text-align: center;
+ color: white; 
+ font-weight: 600;
+ letter-spacing: 2px;
+ margin: 2px;
+
+
+}
+
+.card-course-details{
+    width: 80%;
+    height: 80px;
+    background-color:rgb(41, 37, 37);
+    position: absolute;
+    z-index:1;
+    margin-left: 50px;
+    border-radius: 18px;
+    top: 300px;
+      
+}
+.status{
+    color: white;
+    display:inline-block;
+    width: 45%;
+    height: 80%;
+    margin: 9px 6px  ;
+ 
+    text-align: center;
+    justify-content: space-around;
+}
+.status .first-row{
+    font-size: 18px;
+    margin: 7px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.status .second-row{
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: 200;
+}
+
+
+
+.card-body{
+    width: 90%;
+    height: 620px; 
+    background-color:rgb(15, 15, 15);
+    margin-left: 25px;
+    position: relative;
+    
+}
+.card-body .person-details{
+  position: absolute;
+  justify-items: center;
+  margin-left: 25px;
+  margin-top: 35px;
+}
+.person-details .contact-details {
+   
+    width:90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 2px;
+}
+.contact-details .heading{
+  color: rgb(165, 163, 163);
+  margin: 2px;
+}
+.contact-details .info {
+    color:white;
+    margin: 2px;   
+}
+.contact-details .info p{
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height:1;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing:2px;
+    text-align: justify;
+    color: white;
+}
+
+.card-body .current-course{
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    margin-top:230px;
+    background-color:  rgb(41, 37, 37);
+    display: flex;
+    flex-direction:row; 
+}
+.current-course .left-side{
+    margin: 0px;
+    padding: 0;
+    width: 65%;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.right-side{
+    margin: 0px;
+    padding: 0;
+    width: 35%;
+}
+.right-side .right {
+    border: solid rgb(165, 163, 163);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-top:40px;
+    margin-left:90px;
+    cursor: pointer;
+    }
+
+.left-side .icon{
+   color: rgb(165, 163, 163); 
+   
+   border-radius: 50%;
+   margin-top:18px;
+   margin-left:10px;
+   font-size: 24px;
+   padding: 15px;
+   width: 15px;
+   height: 20px;
+   color: white;
+  
+   
+} 
+.left-side .left{
+   margin-left:20px;
+ 
+}
+.left-side .left h3{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 1px;
+
+}
+
+.left-side .left h5{
+    color: rgb(165, 163, 163); 
+    letter-spacing:1px;  
+}
+
+.card-body .photo{
+    z-index: 1;
+    width: 100%;
+    height: 280px;
+    margin-top:-9px;
+    background-color:  rgb(41, 37, 37);
+}
+
+.photo h3{
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-left: 10%;
+  
+}
+.gallery{
+    margin: 3px 18px;
+    
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows:repeat(4,3vw);
+    grid-gap:1px;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.gallery__item{
+    margin: 6px;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    
+}
+.gallery__item--2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.gallery__item--4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+
+
+
+
+
